@@ -73,7 +73,7 @@ a {
     background-color: #161b22;
     border: 1px solid #30363d;
     border-radius: 6px;
-    padding: 16px;
+    padding: 12px; /* Reduced padding */
     display: flex;
     flex-direction: column;
     position: relative;
@@ -85,11 +85,10 @@ a {
     box-sizing: border-box;
 }
 
-.repo-content {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    padding-bottom: 40px;
+.repo-description {
+    color: #8b949e;
+    font-size: 14px;
+    margin: 8px 0 16px; /* Reduced gap below description */
 }
 
 .repo-info {
@@ -97,9 +96,9 @@ a {
     gap: 15px;
     align-items: center;
     position: absolute;
-    bottom: 16px;
-    left: 16px;
-    right: 16px;
+    bottom: 12px; /* Reduced distance from the bottom */
+    left: 12px;
+    right: 12px;
 }
 
 .repo-card h3 {
