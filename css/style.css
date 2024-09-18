@@ -49,6 +49,10 @@ header {
     transition: color 0.3s ease-in-out;
 }
 
+.nounderline {
+    text-decoration: none;
+}
+
 .header-links a:hover {
     color: #c9d1d9;
 }
@@ -178,7 +182,6 @@ header {
     border-radius: 5px;
     margin: 20px auto;
     padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #c9d1d9;
     position: relative;
     animation: fadeInUp 0.5s ease-out forwards;
@@ -191,7 +194,6 @@ header {
 }
 
 .commit-entry:hover {
-    transform: translateY(-10px);
     background-color: #1f2a36;
 }
 
@@ -210,6 +212,7 @@ header {
 }
 
 .commit-description, .commit-date {
+    text-decoration: none;
     margin: 0;
     font-size: 14px;
     color: #8b949e;
