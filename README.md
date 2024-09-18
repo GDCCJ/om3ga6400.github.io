@@ -3,3 +3,5 @@ My very cool website
 
 # Problems
 Very overcomplcated code
+
+The text on the updates page is underlined
