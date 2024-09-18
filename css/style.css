@@ -73,7 +73,7 @@ a {
     background-color: #161b22;
     border: 1px solid #30363d;
     border-radius: 6px;
-    padding: 12px; /* Reduced padding */
+    padding: 12px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -88,7 +88,7 @@ a {
 .repo-description {
     color: #8b949e;
     font-size: 14px;
-    margin: 8px 0 16px; /* Reduced gap below description */
+    margin: 8px 0 16px;
 }
 
 .repo-info {
@@ -96,7 +96,7 @@ a {
     gap: 15px;
     align-items: center;
     position: absolute;
-    bottom: 12px; /* Reduced distance from the bottom */
+    bottom: 12px;
     left: 12px;
     right: 12px;
 }
