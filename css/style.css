@@ -112,9 +112,9 @@ header {
 
 .repo-status {
     background-color: transparent;
-    color: #c9d1d9;
+    color: #6e7681; /* Lighter grey color */
     padding: 2px 6px;
-    border: 1px solid #30363d;
+    border: 1px solid #6e7681; /* Lighter grey border */
     border-radius: 12px;
     font-size: 12px;
     display: inline-flex;
@@ -123,8 +123,9 @@ header {
 }
 
 .repo-status.archive {
-    color: #f0a305;
-    border-color: #f0a305;
+    background-color: transparent; /* Make the orange box not filled in */
+    color: #f0a305; /* Orange color */
+    border-color: #f0a305; /* Orange border */
 }
 
 .repo-language {
