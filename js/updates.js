@@ -3,8 +3,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const repoName = 'om3ga6400.github.io';
     const container = document.getElementById('updates-container');
 
-    fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/commits`)
-        .then(response => response.json())
+    async function fetchAllCommits(page = 1, commits = []) {
+        const response = await fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/commits?page=${page}&per_page=100`);
+        const newCommits = await response.json();
+        if (newCommits.length > 0) {
+            return fetchAllCommits(page + 1, commits.concat(newCommits));
+        }
+        return commits;
+    }
+
+    fetchAllCommits()
         .then(commits => Array.isArray(commits) ? renderCommits(commits) : container.innerHTML = '<p>No commits found.</p>')
         .catch(error => {
             console.error('Error fetching commits:', error);
