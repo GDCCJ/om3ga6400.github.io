@@ -4,6 +4,10 @@ html, body {
     margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
     color: #c9d1d9;
     font-family: Arial, sans-serif;
